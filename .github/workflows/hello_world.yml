@@ -1,14 +1,16 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+name: auto merge
 
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
+# Trigger: On merge of Develop to Master
 on:
   push:
     branches: [ master ]
+# todo: how to make it only from develop?
   pull_request:
-    branches: [ master ]
+    branches: [ develop ]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
